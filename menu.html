@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yash Cafe - Menu</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #c9b79c; /* Exact beige background */
+            min-height: 100vh;
+            padding-bottom: 70px; /* Space for bottom nav */
+        }
+
+        /* Header Section */
+        .header {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 25px 20px 15px;
+            gap: 15px;
+        }
+
+        .header-img {
+            width: 120px;
+            height: 120px;
+        }
+
+        .header-img img {
+            width: 100%;
+            height: auto;
+        }
+
+        .header-text {
+            text-align: center;
+        }
+
+        .welcome-text {
+            font-size: 28px;
+            font-style: italic;
+            color: #2d2d2d;
+            margin-bottom: 5px;
+            font-family: cursive; /* Matches reference script font */
+        }
+
+        .cafe-name {
+            font-size: 32px;
+            font-weight: 900;
+            color: #000;
+            text-transform: uppercase;
+        }
+
+        /* Search Bar */
+        .search-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            padding: 10px 25px;
+        }
+
+        .search-input {
+            width: 100%;
+            max-width: 300px;
+            height: 55px;
+            border: 2px solid #000;
+            border-radius: 30px;
+            background-color: #fff;
+            padding: 0 20px;
+            font-size: 18px;
+            color: #4a4a4a;
+        }
+
+        .search-icon {
+            font-size: 30px;
+            color: #000;
+            cursor: pointer;
+        }
+
+        /* Menu Categories */
+        .menu-container {
+            padding: 10px 25px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .category-row {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .category-btn {
+            width: 60%;
+            height: 70px;
+            background-color: #fff;
+            border: 2px solid #000;
+            border-radius: 35px;
+            font-size: 22px;
+            font-weight: bold;
+            color: #006400; /* Dark green text */
+            text-align: center;
+            line-height: 70px;
+            cursor: pointer;
+        }
+
+        .category-img {
+            width: 85px;
+            height: 85px;
+            border-radius: 50%;
+            overflow: hidden;
+            border: 2px solid #000;
+        }
+
+        .category-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        /* Bottom Navigation Bar */
+        .bottom-nav {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 65px;
+            background-color: #6b8e23; /* Olive green */
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            padding: 0 15px;
+        }
+
+        .nav-icon {
+            font-size: 32px;
+            color: #000;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <div class="header">
+        <div class="header-img">
+            <img src="coffee-header.png" alt="Coffee cup icon">
+        </div>
+        <div class="header-text">
+            <div class="welcome-text">Welcome to</div>
+            <div class="cafe-name">YASH CAFE!</div>
+        </div>
+    </div>
+
+    <!-- Search Bar -->
+    <div class="search-container">
+        <input type="text" class="search-input" placeholder="Search">
+        <div class="search-icon">&#128269;</div> <!-- Search symbol -->
+    </div>
+
+    <!-- Menu Categories -->
+    <div class="menu-container">
+        <div class="category-row">
+            <button class="category-btn">Coffee Blends</button>
+            <div class="category-img">
+                <img src="coffee-blend.png" alt="Coffee with latte art">
+            </div>
+        </div>
+
+        <div class="category-row">
+            <button class="category-btn">Snacks</button>
+            <div class="category-img">
+                <img src="snacks.png" alt="Pastries">
+            </div>
+        </div>
+
+        <div class="category-row">
+            <button class="category-btn">MilkTeas</button>
+            <div class="category-img">
+                <img src="milktea.png" alt="Milk tea">
+            </div>
+        </div>
+    </div>
+
+    <!-- Bottom Navigation (Exact Icon Shapes) -->
+    <div class="bottom-nav">
+        <div class="nav-icon">&#127968;</div> <!-- Home -->
+        <div class="nav-icon">&#128722;</div> <!-- Cart -->
+        <div class="nav-icon">&#128100;</div> <!-- User -->
+        <div class="nav-icon">&#128712;</div> <!-- Info -->
+        <div class="nav-icon">&#9776;</div> <!-- Menu -->
+    </div>
+</body>
+</html>
